@@ -1,0 +1,102 @@
+/* BASIC SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Basic Font Rules */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --fontBody: 18px 'Open Sans', sans-serif;
+    --fontSubText: 14px 'Open Sans', sans-serif;
+    --fontMainBbutton: bold 16px 'Open Sans', sans-serif;
+    --fontNavigation: bold 12px 'Open Sans', sans-serif;
+    --fontNavCaps: uppercase;
+}
+
+h1 {
+    font: bold 80px 'Bebas Neue', cursive;
+}
+
+h2 {
+    font: bold 36px 'Bebas Neue', cursive;
+}
+
+h3 {
+    font: bold 24px 'Bebas Neue', cursive;
+}
+
+/* MAIN SCREEN */
+.main-screen {
+    background-image: url(assets/main-bg.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-left: 107px;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    font: 700 24px 'Open Sans', sans-serif;
+}
+
+nav {
+    width: 951.83px;
+    margin-left: 142px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-left: 45px;
+    font: 700 12px 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CTA h1 {
+    font: bold 72px arial, sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.CTA h3 {
+    font: bold 24px arial, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.CTA button {
+    width: 260px;
+    height: 60px;
+    border-style: none;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    color: #1A1917;
+    font: bold 16px 'Open Sans', sans-serif;
+}
