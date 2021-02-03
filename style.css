@@ -189,6 +189,10 @@ nav ul li {
     z-index: 1;
     align-self: end;
     justify-self: center;
+    display: flex;
+    width: 30%;
+    margin: 10px auto;
+    justify-content: space-between;
 }
 
 .slide-btn button:first-child {
@@ -200,10 +204,17 @@ nav ul li {
 }
 
 .slide-btn button {
-    margin-right: 52px;
     width: 14px;
     height: 14px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0);
     border: 1.31px solid #FFFFFF;
+}
+
+/* FEATURES */
+.features {
+    background-image: url(assets/features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -1px;
 }
