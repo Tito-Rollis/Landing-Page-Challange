@@ -159,7 +159,6 @@ ul.register {
     box-sizing: border-box;
     width: 100%;
     position: relative;
-    grid-template-areas: 'txt img';
 }
 
 .lead-text {
@@ -175,11 +174,16 @@ ul.register {
     grid-template-areas: 'lf-arrow img rt-arrow';
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
-    width: 60%;
+    width: 40%;
     margin-left: 35%;
 }
 
-.image-slider img {
+.image {
+    background-image: url(assets/rockpaperstrategy-1600.jpg);
+    width: 100%;
+}
+
+.image-slider div.image {
     justify-self: center;
     grid-area: img;
 }
@@ -194,7 +198,6 @@ ul.register {
 .right-arrow {
     align-self: center;
     grid-area: rt-arrow;
-    z-index: 1;
     /* margin-left: 15px; */
 }
 
