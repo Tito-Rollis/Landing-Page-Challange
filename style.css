@@ -270,7 +270,7 @@ ul.register {
 @media (max-width: 767px) {
     .main-screen {
         height: 98vh;
-        background-position-y: 0px;
+        background-position-y: 10px;
         background-position: center;
     }
 
@@ -333,7 +333,7 @@ ul.register {
     }
 
     .image-slider img {
-        width: 350px;
+        width: 350px !important;
     }
 
     .left-arrow {
@@ -360,7 +360,6 @@ ul.register {
 @media (max-width: 991px) {
     .main-screen {
         height: 98vh;
-        background-position-y: 0px;
         background-position: center;
     }
 
@@ -372,8 +371,7 @@ ul.register {
         font-size: 1.3em;
     }
 
-    /* .about {
-
+    .about {
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -400,5 +398,5 @@ ul.register {
 
     .slide-btn {
         width: 50%;
-    } */
+    }
 }
