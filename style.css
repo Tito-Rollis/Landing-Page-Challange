@@ -125,7 +125,7 @@ ul.register {
     height: 50px;
     border-style: none;
     background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
-    border-radius: 4px;
+    border-radius: 10px;
     color: #1A1917;
     font: var(--fontMainBbutton);
 }
@@ -153,9 +153,9 @@ ul.register {
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 254px;
-    padding-bottom: 242px;
+    overflow: hidden;
+    padding-top: 200px;
+    padding-bottom: 200px;
     box-sizing: border-box;
     width: 100%;
     position: relative;
@@ -165,7 +165,7 @@ ul.register {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 5%;
+    left: 6%;
 }
 
 /* IMAGE SLIDE STYLE */
@@ -174,16 +174,17 @@ ul.register {
     grid-template-areas: 'lf-arrow img rt-arrow';
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
-    width: 40%;
+    width: 60%;
     margin-left: 35%;
 }
 
 .image {
     background-image: url(assets/rockpaperstrategy-1600.jpg);
-    width: 100%;
+
 }
 
-.image-slider div.image {
+.image-slider img {
+    width: 600px;
     justify-self: center;
     grid-area: img;
 }
@@ -192,13 +193,11 @@ ul.register {
     align-self: center;
     justify-self: end;
     grid-area: lf-arrow;
-    /* margin-right: 15px; */
 }
 
 .right-arrow {
     align-self: center;
     grid-area: rt-arrow;
-    /* margin-left: 15px; */
 }
 
 .slide-btn {
@@ -213,10 +212,7 @@ ul.register {
 }
 
 .slide-btn button:first-child {
-    width: 14px;
-    height: 14px;
     background-color: #FFFFFF;
-    border-radius: 50%;
     border-style: none;
 }
 
@@ -233,8 +229,41 @@ ul.register {
     background-image: url(assets/features.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -1px;
+    background-position-y: -2px;
+    color: #FFFFFF;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
+
+.bracket {
+    width: 40%;
+    margin-top: 18.5%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sm-bracket {
+    margin-top: 10%;
+    display: flex;
+}
+
+.ft-bullet {
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-list {
+    margin-left: 6%;
+}
+
 
 /* MEDIA QUERY */
 /* MOBILE */
@@ -257,10 +286,6 @@ ul.register {
     .CTA button {
         width: 150px;
         height: 50px;
-        border-style: none;
-        background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
-        border-radius: 4px;
-        color: #1A1917;
         font-size: .8em;
     }
 
@@ -275,6 +300,59 @@ ul.register {
     ul.navlink,
     ul.register {
         display: none;
+    }
+
+    .about {
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .lead-text {
+        position: static;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .lead-text h3 {
+        font-size: 1.1em;
+    }
+
+    .lead-text h1 {
+        margin-top: 15px;
+        font-size: 2.5em;
+    }
+
+    .image-slider {
+        width: 100%;
+        margin: 100px auto;
+        grid-column-gap: 2px;
+    }
+
+    .image-slider img {
+        width: 350px;
+    }
+
+    .left-arrow {
+        width: 15px;
+        height: 20px;
+    }
+
+    .right-arrow {
+        width: 15px;
+        height: 20px;
+    }
+
+    .slide-btn {
+        width: 50%;
+    }
+
+    .slide-btn button {
+        width: 12px;
+        height: 12px;
     }
 }
 
@@ -293,4 +371,34 @@ ul.register {
     .CTA h3 {
         font-size: 1.3em;
     }
+
+    /* .about {
+
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .lead-text {
+        position: static;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .lead-text h1 {
+        margin-top: 15px;
+    }
+
+    .image-slider {
+        width: 100%;
+        margin: 100px auto;
+        grid-column-gap: 10px;
+    }
+
+    .image-slider img {
+        width: 400px;
+    }
+
+    .slide-btn {
+        width: 50%;
+    } */
 }
